@@ -1,1 +1,1 @@
-:pencil: C++_basic :pencil:
+:pencil: C++ :pencil:
