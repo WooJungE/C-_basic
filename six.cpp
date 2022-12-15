@@ -1,5 +1,5 @@
-//ÁÂÇ¥¿¡¼­ ¿òÁ÷¿´À» ¶§ µµÂøÁö
-/*
+//ì¢Œí‘œì—ì„œ ì›€ì§ì˜€ì„ ë•Œ ë„ì°©ì§€ê°€ ì–´ë””ì¸ì§€ ì°ê¸°
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -16,7 +16,7 @@ Path::Path(int xx1, int yy1, int xx2, int yy2) {
 }
 bool operator==(Path& a, Path& b) {
 	if (a.x1 == b.x1 && a.y1 == b.y1 && a.x2 == b.x2 && a.y2 == b.y2) return true;
-	if (a.x1 == b.x2 && a.y1 == b.y2 && a.x2 == b.x1 && a.y2 == b.y1) return true;//¹æÇâ ¹İ´ë
+	if (a.x1 == b.x2 && a.y1 == b.y2 && a.x2 == b.x1 && a.y2 == b.y1) return true;//ë°©í–¥ ë°˜ëŒ€
 	return false;
 }
 
@@ -36,10 +36,10 @@ MyGame::MyGame() { x = 0; y = 0; }
 int MyGame::getX() { return x; }
 int MyGame::getY() { return y; }
 
-void MyGame::move(string& commands) { //ÆÄ¶ó¹ÌÅÍ string //public
+void MyGame::move(string& commands) { //íŒŒë¼ë¯¸í„° string //public
 	for (int i = 0; i < commands.length(); i++) {
 		try {
-			move(commands[i]); //ÆÄ¶ó¹ÌÅÍ char 1°³ //private
+			move(commands[i]); //íŒŒë¼ë¯¸í„° char 1ê°œ //private
 		}
 		catch (OutofBound& e) {
 		}
@@ -74,4 +74,3 @@ int main() {
 	cout << "(" << game.getX() << "," << game.getY() << ")" << endl;
 	
 }
-*/
