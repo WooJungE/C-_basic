@@ -1,6 +1,5 @@
-//°¡Àå ³ĞÀº Á¤»ç°¢Çü ±¸ÇÏ±â
-//Á¤»ç°¢Çü ³ĞÀÌ ±¸ÇÏ±â
-/*
+//ê°€ì¥ í° ì •ì‚¬ê°í˜•ì˜ ë„“ì´ êµ¬í•˜ê¸°
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -83,4 +82,3 @@ int main() {
 	P11 myp11(table);
 	cout << myp11.solution() << endl;
 }
-*/
