@@ -1,5 +1,5 @@
-//»ç°¢Çü ³ĞÀÌ ±¸ÇÏ±â
-/*
+//ì‚¬ê°í˜• ë„“ì´ êµ¬í•˜ê¸°
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -9,18 +9,18 @@ using namespace std;
 
 class P11 {
 	//private 
-protected: //»ó¼Ó ¹Ş¾Æ¾ß ÇÔ
+protected: //ìƒì† ë°›ì•„ì•¼ í•¨
 	vector< vector<int> > table;
 	int width, height;
-	int getArea(int top, int left); //¿À¹ö¶óÀÌÆ® ÈÄ Á¤»ç°¢Çü ´ë½Å »ç°¢ÇüÀ¸·Î
+	int getArea(int top, int left); //ì˜¤ë²„ë¼ì´íŠ¸ í›„ ì •ì‚¬ê°í˜• ëŒ€ì‹  ì‚¬ê°í˜•ìœ¼ë¡œ
 	virtual bool isCorrectSize(int top, int left, int bottom, int right);
 	bool isWhatIWant(int top, int left, int bottom, int right);
 public:
 	P11(vector< vector<int>> table);
-	int solution(); //ÃÖ´ë ¸éÀû ±¸ÇÏ±â
+	int solution(); //ìµœëŒ€ ë©´ì  êµ¬í•˜ê¸°
 };
 
-class P112 : public P11 { //»ó¼Ó ¹Ş±â
+class P112 : public P11 { //ìƒì† ë°›ê¸°
 	virtual bool isCorrectSize(int top, int left, int bottom, int right);
 public:
 	P112(vector < vector <int> > table);
@@ -107,4 +107,3 @@ int main() {
 	cout << myp11.solution() << endl;
 	cout << myp112.solution() << endl;
 }
-*/
