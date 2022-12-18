@@ -1,5 +1,5 @@
-/*
-//10Áø¼ö 2Áø¼ö·Î ¹Ù²Ù¾î¼­ 0°ú 1ÀÌ 2ÀÌÇÏ·Î ´Ù¸¥ ¼ö Ã£±â
+//four.cppì™€ ê°™ì€ ë¬¸ì œ
+//10ì§„ìˆ˜ 2ì§„ìˆ˜ë¡œ ë°”ê¾¸ì–´ì„œ 0ê³¼ 1ì´ 2ì´í•˜ë¡œ ë‹¤ë¥¸ ìˆ˜ ì°¾ê¸°
 
 #include <iostream>
 #include <string>
@@ -8,7 +8,7 @@
 using namespace std;
 
 class FX {
-protected: //»ó¼Ó
+protected: //ìƒì†
 	long long n;
 	int diff(long long n, long long i);
 public:
@@ -30,7 +30,7 @@ long long FX::solution() {
 }
 int FX::diff(long long n, long long i) {
 	int count = 0;
-	int len = sizeof(n) * 8; //n bit ±¸ÇÏ±â
+	int len = sizeof(n) * 8; //n bit êµ¬í•˜ê¸°
 	long long mask = 1;
 	for (int j = 0; j < len; j++) {
 		if ((n & mask) != (i & mask)) count++;
@@ -53,4 +53,3 @@ int main() {
 	cout << n << ":" << myfx.solution() << endl;
 	cout << n << ":" << myfx2.solution() << endl;
 }
-*/
