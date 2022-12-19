@@ -1,11 +1,11 @@
 //Puzzle
 //implement puzzle class to represent a 8-number puzzle 
-//0Àº ºóÄ­À» ÀÇ¹Ì
-//suffle ·£´ıÇÏ°Ô ¹Ù²Ş
-//move 0¸¦ ÀÌµ¿ 
+//0ì€ ë¹ˆì¹¸ì„ ì˜ë¯¸
+//suffle ëœë¤í•˜ê²Œ ë°”ê¿ˆ
+//move 0ë¥¼ ì´ë™ 
 //U, D, L, R
-//notMoveable
-/*
+//notMoveable ì¢Œí‘œ ë°–ì„ ë²—ì–´ë‚  ê²½ìš° ì‹¤í–‰ë˜ì§€ ì•Šê²Œ í•¨
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -14,7 +14,7 @@
 
 using namespace std;
 
-//¿¹¿Ü¸¦ À§ÇÑ class
+//ì˜ˆì™¸ë¥¼ ìœ„í•œ class
 class notMoveable{};
 
 class Puzzle {
@@ -41,7 +41,7 @@ Puzzle::Puzzle() {
 void Puzzle::shuffle() {
 	srand(time(NULL));
 	int rn;
-	for (int i = 0; i < 4; i++) { //i < n // n= ¿øÇÏ´Â È½¼ö
+	for (int i = 0; i < 4; i++) { //i < n // n= ì›í•˜ëŠ” íšŸìˆ˜
 		rn = rand() % 4;
 		try {
 			switch (rn) {
@@ -124,4 +124,3 @@ int main() {
 	}
 	cout << "It's done" << endl;
 }
-*/
