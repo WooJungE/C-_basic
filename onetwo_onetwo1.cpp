@@ -1,14 +1,15 @@
-//SevenSeg Å¬·¡½º ±¸Çö
+//SevenSeg í´ë˜ìŠ¤ êµ¬í˜„
 //int n, char seg[15]
-//SevenSeg(int n)//ÃÊ±âÈ­ 0<=n<=9
-//cout¿¡ ´ëÇÑ << operator overloading
+//SevenSeg(int n)//ì´ˆê¸°í™” 0<=n<=9
+//coutì— ëŒ€í•œ << operator overloading
 // - 
 //| |
 // -
 //| |
 // _
+//ex) ì—˜ë¦¬ë² ì´í„° ìˆ«ì í‘œì‹œ ë°©ì‹
 
-/*
+
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
@@ -16,12 +17,12 @@
 using namespace std;
 
 class SevenSeg {
-	//¸â¹ö º¯¼ö
+	//ë©¤ë²„ ë³€ìˆ˜
 	int n;
 	char seg[15];
 	void Set();
 public:
-	SevenSeg(int n); //constructure ±¸Çö
+	SevenSeg(int n); //constructure êµ¬í˜„
 	friend ostream& operator<<(ostream& os, SevenSeg& ss);
 };
 void SevenSeg::Set() {
@@ -61,4 +62,3 @@ int main() {
 	SevenSeg myseg1(1), myseg2(2), myseg3(3), myseg4(4), myseg5(5), myseg6(6), myseg7(7), myseg8(8), myseg9(9), myseg0(0);
 	cout << myseg1 << myseg2 << myseg3 << myseg4 << myseg5 << myseg6 << myseg7 << myseg8 << myseg9 << myseg0;
 }
-*/
