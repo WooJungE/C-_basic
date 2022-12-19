@@ -1,9 +1,10 @@
-//SevenSegs Å¬·¡½º ±¸Çö
+//SevenSegs í´ë˜ìŠ¤ êµ¬í˜„
 //int n, vector<SevenSeg>
-//SevenSegs(int n)//ÃÊ±âÈ­, nÀº ÀÓÀÇÀÇ ¾çÀÇ Á¤¼ö
-//cout¿¡ ´ëÇÑ <<operator overloading 
+//SevenSegs(int n)//ì´ˆê¸°í™”, nì€ ì„ì˜ì˜ ì–‘ì˜ ì •ìˆ˜
+//coutì— ëŒ€í•œ <<operator overloading 
+//1ë²ˆê³¼ ë‹¬ë¦¬ ìˆ«ì í•˜ë‚˜ë§Œ ì£¼ì–´ì§€ëŠ” ê²ƒì´ ì•„ë‹Œ ì‹­ì˜ ìë¦¬, ë°±ì˜ ìë¦¬ ê·¸ ì´ìƒ í‘œí˜„ ê°€ëŠ¥
 
-/*
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -15,12 +16,12 @@ using namespace std;
 class SevenSegs;
 
 class SevenSeg {
-	//¸â¹ö º¯¼ö
+	//ë©¤ë²„ ë³€ìˆ˜
 	int n;
 	char seg[15];
 	void Set();
 public:
-	SevenSeg(int n); //constructure ±¸Çö
+	SevenSeg(int n); //constructure êµ¬í˜„
 	friend ostream& operator<<(ostream& os, SevenSeg& ss);
 	friend ostream& operator<<(ostream& os, SevenSegs& ss);
 };
@@ -98,4 +99,3 @@ int main() {
 	SevenSegs myseg1(123), myseg2(54321);
 	cout << myseg1 << myseg2;
 }
-*/
