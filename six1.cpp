@@ -1,5 +1,6 @@
-//ÁÂÇ¥¿¡¼­ ¿òÁ÷¿´À» ¶§ µµÂøÁö¿Í °Å¸®
-/*
+//ì¢Œí‘œì—ì„œ ì›€ì§ì˜€ì„ ë•Œ ë„ì°©ì§€ê°€ ì–´ë””ì¸ì§€ ì°ê¸°
+//ë„ì°©ì§€ê¹Œì§€ì˜ ê±°ë¦¬ êµ¬í•˜ê¸°
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -18,7 +19,7 @@ Path::Path(int xx1, int yy1, int xx2, int yy2) {
 }
 bool operator==(Path& a, Path& b) {
 	if (a.x1 == b.x1 && a.y1 == b.y1 && a.x2 == b.x2 && a.y2 == b.y2) return true;
-	if (a.x1 == b.x2 && a.y1 == b.y2 && a.x2 == b.x1 && a.y2 == b.y1) return true;//¹æÇâ ¹İ´ë
+	if (a.x1 == b.x2 && a.y1 == b.y2 && a.x2 == b.x1 && a.y2 == b.y1) return true;//ë°©í–¥ ë°˜ëŒ€
 	return false;
 }
 class PathQue {
@@ -112,4 +113,3 @@ int main() {
 	myque.push(p3);
 	cout << myque.count() << endl;
 }
-*/
