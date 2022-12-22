@@ -1,4 +1,4 @@
-//가장 큰 정사각형의 넓이 구하기
+//주어진 좌표에서 가장 큰 정사각형의 넓이 구하기
 
 #include <iostream>
 #include <string>
