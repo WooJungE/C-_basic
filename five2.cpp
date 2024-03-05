@@ -8,7 +8,7 @@
 using namespace std;
 
 class P11 {
-	//private 
+//private 
 protected: //상속 받아야 함
 	vector< vector<int> > table;
 	int width, height;
